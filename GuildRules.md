@@ -38,7 +38,7 @@ Prepared
 - The following addons are mandatory for raiding:
     1. You must have DBM/Bigwigs or another boss timer installed. (https://www.curseforge.com/wow/addons/big-wigs)
     2. WeakAuras to complement certain strategies. (https://mods.curse.com/addons/wow/weakauras-2)
-    3. Angry Assignments for setting up groups, interrupt rotations, etc. (https://www.curseforge.com/wow/addons/angry-assignments)
+    3. Exorsus Raid Tools for setting up groups, interrupt rotations, etc. (https://www.curseforge.com/wow/addons/exorsus-raid-tools)
     4. RCLootCouncil for loot distribution. (https://www.curseforge.com/wow/addons/rclootcouncil)
     5. If you have trouble with repeated fire stepping please consider GTFO. (https://mods.curse.com/addons/wow/gtfo)
 
@@ -51,4 +51,4 @@ We will start using the RCLootCouncil addon which has been adapted to personal l
 Loot priority goes as normally: Raiders over trials, DPS over healers, etc. Outlier cases will be discussed as they occur. Furthermore, we have some measures to protect fairness for the looter:
 
 - If the looter is a trial, then for that piece of loot the trial will be treated as a raider.
-- If the piece of loot is an equal upgrade for the looter and one or more raiders, then the looter will be prefered to receive that piece of loot.
+- If the piece of loot is an equal upgrade for the looter and the other eligible players, then the looter will be prefered to receive that piece of loot.
