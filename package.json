@@ -5,11 +5,15 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:css": "tailwind build src/assets/styles/index.css -o dist/style.css",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@types/jquery": "^3.5.3",
     "core-js": "^3.6.5",
+    "jquery": "^3.5.1",
+    "tailwindcss": "^1.9.5",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0"
   },
@@ -37,6 +41,7 @@
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
     "typescript": "~3.9.3",
+    "vue-cli-plugin-pug": "~1.0.7",
     "vue-jest": "^5.0.0-0"
   },
   "gitHooks": {
