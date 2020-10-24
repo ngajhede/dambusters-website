@@ -1,17 +1,18 @@
 <template lang="pug">
 Navigation
-.container.mx-auto
-  router-view
+router-view
+Footer
 </template>
 
 <script lang="ts">
 import Navigation from '@/components/Navigation.vue'
+import Footer from '@/components/Footer.vue'
 import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    Navigation
+    Navigation, Footer
   }
 })
 
