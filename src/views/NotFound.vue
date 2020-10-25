@@ -7,7 +7,7 @@ import { defineComponent } from 'vue'
 import NotFoundPage from '@/components/NotFoundPage.vue'
 
 export default defineComponent({
-  name: 'Home',
+  name: 'NotFound',
   components: {
     NotFoundPage
   }
