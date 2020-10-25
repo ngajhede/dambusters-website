@@ -1,7 +1,7 @@
 <template>
 <div class="h-screen flex items-start lg:items-center justify-center">
   <div class="container mx-auto px-4 h-full">
-      <h2 class="text-gray-800 font-semibold tracking-tight leading-loose text-center text-3xl lg:text-4xl lg:text-5xl my-2 lg:my-8">
+      <h2 class="text-white font-semibold tracking-tight leading-loose text-center text-3xl lg:text-4xl lg:text-5xl my-2 lg:my-8">
           About The Dambusters
       </h2>
       <section x-data="{ selectedItem: 1 }" class="shadow-md bg-gray-200 overflow-hidden rounded-lg mt-6 sm:shadow-lg lg:mt-16 lg:mx-auto lg:max-w-4xl">
