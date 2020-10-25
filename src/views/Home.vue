@@ -1,5 +1,6 @@
 <template lang="pug">
 HeroCulture(name="home")
+FeatureBlock
 .container.mx-auto
   .teams(name='teams')
     TeamPicker
@@ -10,14 +11,14 @@ HeroCulture(name="home")
 <script lang="ts">
 import { defineComponent } from 'vue'
 import HeroCulture from '@/components/HeroCulture.vue'
-import Card from '@/components/Card.vue'
+import FeatureBlock from '@/components/FeatureBlock.vue'
 import TeamPicker from '@/components/TeamPicker.vue'
 import FAQList from '@/components/FAQList.vue'
 
 export default defineComponent({
   name: 'Home',
   components: {
-    Card, HeroCulture, TeamPicker, FAQList
+    FeatureBlock, HeroCulture, TeamPicker, FAQList
   }
 })
 </script>
