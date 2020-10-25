@@ -1,5 +1,6 @@
 <template lang="pug">
-Navigation
+.nav.bg-black
+  Navigation
 router-view
 Footer
 </template>
@@ -20,7 +21,7 @@ export default defineComponent({
 
 <style lang="stylus">
 #app
-  font-family "Montserrat", sans-serif
+  font-family 'Roboto', sans-serif
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
 </style>
