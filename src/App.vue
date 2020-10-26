@@ -2,18 +2,18 @@
 .nav.bg-black
   Navigation
 router-view
-Footer
+FooterSimple
 </template>
 
 <script lang="ts">
 import Navigation from '@/components/Navigation.vue'
-import Footer from '@/components/Footer.vue'
+import FooterSimple from '@/components/FooterSimple.vue'
 import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    Navigation, Footer
+    Navigation, FooterSimple
   }
 })
 
