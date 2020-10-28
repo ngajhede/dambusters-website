@@ -179,10 +179,13 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'Navigation'
+  name: 'Navigation',
+  data () {
+    return {
+      isMenuOpen: false
+    }
+  }
 })
-
-const isMenuOpen = false
 
 </script>
 
