@@ -1,45 +1,44 @@
 <template>
-<div class="text-center transform scale-75">
-  <div class="xl:p-18 xl:m-auto">
-    <div class="grid xl:grid-cols-3">
-      <div class="z-10 pb-20 mt-20 bg-white border-2 rounded-lg shadow-xl xl:p-20 xl:ml-1 hover:shadow-2xl">
-        <div class="w-2/6 p-4 m-auto mt-12 border-4 border-red-600 rounded-full xl:mt-0">
-            <img :src="require('@/assets/images/WoW_icon.svg')"/>
-        </div>
-        <h3 class="mt-8 text-4xl font-bold">Wildwood</h3>
-        <h3 class="mt-6 mb-6 text-4xl font-semibold text-purple-400">10/12 Mythic</h3>
-        <ul class="space-y-6 text-xl">
-            <li>Monday & Thursday</li>
-            <li>20:00-23:00 Realm Time</li>
-            <li>Personal Loot</li>
-        </ul>
-        <button class="w-5/6 h-16 mt-12 text-xl font-semibold text-white bg-red-400 rounded xl:mb-6">Apply</button>
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 mt-5">
+  <div class="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg">
+    <div>
+      <img class="object-cover w-24 h-24 rounded-full mx-auto" :src="require('@/assets/images/classes/Pandaren_Crest.png')" alt="Raid team" />
+      <div class="flex flex-col justify-center mt-2">
+        <p class="text-2xl font-bold mx-auto text-white">Virnaal</p>
+        <p class="mb-4 text-base mx-auto text-gray-500 mx-auto">Heroic</p>
+        <p class="text-sm tracking-wide mx-auto text-gray-500 mx-auto">
+          Pommy ipsum bent as a nine bob note naff off biscuits nowt, a cuppa unhand me sir hadn't done it in donkey's years sod's law.
+        </p>
       </div>
-      <div class="z-10 pb-20 mt-20 transform scale-110 bg-white border-2 rounded-lg shadow-xl xl:p-20 xl:ml-1 hover:shadow-2xl">
-          <div class="w-2/6 p-4 m-auto mt-12 border-4 border-red-600 rounded-full xl:mt-0">
-                <img :src="require('@/assets/images/WoW_icon.svg')"/>
-          </div>
-          <h3 class="mt-8 text-3xl font-bold">Ironwall</h3>
-          <h3 class="mt-6 mb-6 text-4xl font-semibold text-purple-400">11/12 Mythic</h3>
-          <ul class="space-y-6 text-xl">
-            <li>Wed, Thur & Sundays</li>
-            <li>20:00-23:00 Realm Time</li>
-            <li>Loot Council</li>
-          </ul>
-          <button class="w-5/6 h-16 mt-12 text-xl font-semibold text-white bg-red-400 rounded xl:mb-6">Apply</button>
+    </div>
+    <div>
+      <img class="object-cover w-24 h-24 rounded-full mx-auto" :src="require('@/assets/images/classes/Warrior_Crest.png')" alt="Raid team" />
+      <div class="flex flex-col justify-center mt-2">
+        <p class="text-2xl font-bold mx-auto text-white">Ironwall</p>
+        <p class="mb-4 text-base mx-auto text-gray-500 mx-auto">Mythic</p>
+        <p class="text-sm tracking-wide mx-auto text-gray-500">
+          Secondary fermentation degrees plato units of bitterness, cask conditioned ale ibu real ale pint glass craft beer. krausen goblet grainy ibu.
+        </p>
       </div>
-      <div class="pb-20 mt-20 bg-white border-2 rounded-lg shadow-xl xl:p-20 xl:ml-1 hover:shadow-2xl">
-        <div class="w-2/6 p-4 m-auto mt-12 border-4 border-red-600 rounded-full xl:mt-0">
-              <img :src="require('@/assets/images/WoW_icon.svg')"/>
-        </div>
-        <h3 class="mt-8 text-3xl font-bold">Stonewrought</h3>
-        <h3 class="mt-6 mb-6 text-4xl font-semibold text-purple-400">10/12 Mythic</h3>
-        <ul class="space-y-6 text-xl">
-          <li>Wed, Thur & Sundays</li>
-          <li>20:00-23:00 Realm Time</li>
-          <li>Personal Loot</li>
-        </ul>
-        <button class="w-5/6 h-16 mt-12 text-xl font-semibold text-white bg-red-400 rounded xl:mb-6">Apply</button>
+    </div>
+    <div>
+      <img class="object-cover w-24 h-24 rounded-full mx-auto" :src="require('@/assets/images/classes/Druid_Crest.png')" alt="Raid team" />
+      <div class="flex flex-col justify-center mt-2">
+        <p class="text-2xl font-bold mx-auto text-white">Wildwood</p>
+        <p class="mb-4 text-base mx-auto text-gray-500 mx-auto">Mythic</p>
+        <p class="text-sm tracking-wide mx-auto text-gray-500">
+          I just closed my eyes and in a nanosecond I cured myself from this ridiculous model of disease, addiction and obsession.
+        </p>
+      </div>
+    </div>
+    <div>
+      <img class="object-cover w-24 h-24 rounded-full mx-auto" :src="require('@/assets/images/classes/Shaman_Crest.png')" alt="Raid team" />
+      <div class="flex flex-col justify-center mt-2">
+        <p class="text-2xl font-bold mx-auto text-white">Stonewrought</p>
+        <p class="mb-4 text-base mx-auto text-gray-500 mx-auto">Mythic</p>
+        <p class="text-sm tracking-wide mx-auto text-gray-500">
+          Est Schlitz shoreditch fashion axe. Messenger bag cupidatat Williamsburg sustainable aliqua, umami shabby chic artisan duis pickled.
+        </p>
       </div>
     </div>
   </div>
@@ -54,3 +53,9 @@ export default defineComponent({
   }
 })
 </script>
+
+<style lang="stylus">
+.team-picker
+  background-color #141617
+
+</style>
