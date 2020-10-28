@@ -35,25 +35,25 @@
               aria-label="Our Home"
               title="Our Home"
               class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >Home</a
+              >HOME</a
             >
           </li>
           <li>
             <a
               href="/teams"
-              aria-label="Our Home"
-              title="Our Home"
+              aria-label="Our Teams"
+              title="Our Teams"
               class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >Teams</a
+              >TEAMS</a
             >
           </li>
           <li>
             <a
               href="/"
-              aria-label="Our Home"
-              title="Our Home"
+              aria-label="About us"
+              title="About us"
               class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >About Us</a
+              >ABOUT US</a
             >
           </li>
         </ul>
