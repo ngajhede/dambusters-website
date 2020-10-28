@@ -1,5 +1,5 @@
 <template>
-<footer class="w-full text-gray-700 bg-gray-400 body-font">
+<footer class="w-full text-gray-700 footer-simple body-font mt-5">
   <div class="container flex flex-col flex-wrap px-5 py-10 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
     <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
       <a class="flex items-center justify-center font-medium text-white title-font md:justify-start">
@@ -52,3 +52,12 @@
   </div>
 </footer>
 </template>
+
+<script lang="ts">
+
+</script>
+
+<style lang="stylus">
+.footer-simple
+  background-color #141516
+</style>
