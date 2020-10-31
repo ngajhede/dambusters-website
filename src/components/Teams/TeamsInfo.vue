@@ -25,78 +25,73 @@
     </p>
   </div>
   <div class="grid gap-10 row-gap-8 mx-auto sm:row-gap-10 lg:max-w-screen-lg sm:grid-cols-2 lg:grid-cols-3">
-    <div class="flex">
-      <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
-      <div class="flex flex-col justify-center">
-        <p class="text-lg font-bold">Oliver Aguilerra</p>
-        <p class="text-sm text-gray-800">Product Manager</p>
-      </div>
-    </div>
-    <div class="flex">
-      <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
-      <div class="flex flex-col justify-center">
-        <p class="text-lg font-bold">Marta Clermont</p>
-        <p class="text-sm text-gray-800">Design Team Lead</p>
-      </div>
-    </div>
-    <div class="flex">
-      <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
-      <div class="flex flex-col justify-center">
-        <p class="text-lg font-bold">Anthony Geek</p>
-        <p class="text-sm text-gray-800">CTO, Lorem Inc.</p>
-      </div>
-    </div>
-    <div class="flex">
-      <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
-      <div class="flex flex-col justify-center">
-        <p class="text-lg font-bold">Alice Melbourne</p>
-        <p class="text-sm text-gray-800">Human Resources</p>
-      </div>
-    </div>
-    <div class="flex">
-      <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="Person" />
-      <div class="flex flex-col justify-center">
-        <p class="text-lg font-bold">Martin Garix</p>
-        <p class="text-sm text-gray-800">Bad boy</p>
-      </div>
-    </div>
-    <div class="flex">
-      <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
-      <div class="flex flex-col justify-center">
-        <p class="text-lg font-bold">Andrew Larkin</p>
-        <p class="text-sm text-gray-800">Backend Developer</p>
-      </div>
-    </div>
-    <div class="flex">
-      <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
-      <div class="flex flex-col justify-center">
-        <p class="text-lg font-bold">Sophie Denmo</p>
-        <p class="text-sm text-gray-800">Designer UI/UX</p>
-      </div>
-    </div>
-    <div class="flex">
-      <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3931553/pexels-photo-3931553.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
-      <div class="flex flex-col justify-center">
-        <p class="text-lg font-bold">Benedict Caro</p>
-        <p class="text-sm text-gray-800">Frontend Developer</p>
-      </div>
-    </div>
-    <div class="flex">
-      <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3783255/pexels-photo-3783255.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
-      <div class="flex flex-col justify-center">
-        <p class="text-lg font-bold">Adam Molly</p>
-        <p class="text-sm text-gray-800">Full Stack Developer</p>
-      </div>
-    </div>
+    <TeamsItem v-for="member in team" :key="member.id" :name="member.name" :title="member.title" :avatar="member.avatar" />
   </div>
 </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import TeamsItem from './TeamsItem.vue'
 
 export default defineComponent({
-  name: 'TeamsInfo'
+  name: 'TeamsInfo',
+  components: { TeamsItem },
+  data () {
+    return {
+      team: [{
+        id: 1,
+        name: 'Estevan Python',
+        title: 'Junior Executive',
+        avatar: 'https://robohash.org/reiciendisillumdistinctio.bmp?size=50x50&set=set1'
+      }, {
+        id: 2,
+        name: 'Mersey Ziemens',
+        title: 'Quality Control Specialist',
+        avatar: 'https://robohash.org/mollitiacupiditateperspiciatis.bmp?size=50x50&set=set1'
+      }, {
+        id: 3,
+        name: 'Marigold Martinello',
+        title: 'Social Worker',
+        avatar: 'https://robohash.org/etrerumexplicabo.jpg?size=50x50&set=set1'
+      }, {
+        id: 4,
+        name: 'Boris Woodage',
+        title: 'Technical Writer',
+        avatar: 'https://robohash.org/veritatiscorporisillum.bmp?size=50x50&set=set1'
+      }, {
+        id: 5,
+        name: 'Loren Beddard',
+        title: 'Legal Assistant',
+        avatar: 'https://robohash.org/autemconsequaturaperiam.bmp?size=50x50&set=set1'
+      }, {
+        id: 6,
+        name: 'Faunie Sparkes',
+        title: 'Nurse',
+        avatar: 'https://robohash.org/natusabconsequatur.bmp?size=50x50&set=set1'
+      }, {
+        id: 7,
+        name: 'Malinda Shorey',
+        title: 'Web Designer III',
+        avatar: 'https://robohash.org/explicaboestdoloribus.png?size=50x50&set=set1'
+      }, {
+        id: 8,
+        name: 'Harv Mather',
+        title: 'Geological Engineer',
+        avatar: 'https://robohash.org/inreprehenderitsit.bmp?size=50x50&set=set1'
+      }, {
+        id: 9,
+        name: 'Gabrielle Ranstead',
+        title: 'Community Outreach Specialist',
+        avatar: 'https://robohash.org/utpariaturad.jpg?size=50x50&set=set1'
+      }, {
+        id: 10,
+        name: 'Bette-ann Tilt',
+        title: 'Automation Specialist II',
+        avatar: 'https://robohash.org/estvoluptateoptio.jpg?size=50x50&set=set1'
+      }]
+    }
+  }
 })
 </script>
 
