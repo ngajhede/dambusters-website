@@ -1,5 +1,5 @@
 <template>
-<div class="relative flex flex-col items-center justify-center min-h-screen bg-cover min-w-screen" :style="{ backgroundImage: 'url(' + require('@/assets/images/hero-background.png') + ')' }">
+<div class="relative flex flex-col items-center justify-center min-h-screen bg-cover bg-center min-w-screen" :style="{ backgroundImage: 'url(' + require('@/assets/images/hero-background.png') + ')' }">
   <div class="absolute inset-0 w-full h-full">
   </div>
   <div class="flex max-w-6xl mx-auto">
